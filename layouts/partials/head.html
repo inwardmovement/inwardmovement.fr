@@ -14,3 +14,4 @@
 {{ end }}
 {{ partial "styles" . }}
 <link href="{{ (resources.Get "/img/logo-circle.png" ).Permalink }}" rel="icon" type="image/x-icon" />
+{{ range .Site.AllPages }}<link rel="prefetch" href="{{ .Permalink }}" as="document">{{ end }}

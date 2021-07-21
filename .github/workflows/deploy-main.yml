@@ -34,7 +34,7 @@ jobs:
         extended: true
       if: success()
     - name: Build site
-      run: npm run build
+      run: npm run _build
       if: success()
     - name: Deploy site
       uses: crazy-max/ghaction-github-pages@v2.1.2
